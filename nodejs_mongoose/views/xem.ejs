@@ -1,0 +1,43 @@
+<% include template/header %>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3 text-center">Xem dữ liệu</h1>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% dulieu.forEach(function(person) { %>
+                <tr>
+                    <td scope="row"><%= person.ten %></td>
+                    <td><%= person.tuoi %></td>
+                    <td>
+                        <a href="/sua/<%= person._id %>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                        <a onclick="return xoahaykhong('Bán có muốn xóa hay không ?');" href="/xoa/<%= person._id %>" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+                <% }) %>
+
+                <script>
+                    function xoahaykhong(tinnhan) {
+                        if(window.confirm(tinnhan) == true) {
+                            return true;
+                        } else return false;
+                    }
+                </script>
+            </tbody>
+        </table>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

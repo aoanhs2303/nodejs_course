@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% var b = 20; %>
+    <b>Biến b: <%= b %> </b>
+    <% for(var i = 1; i <= 10; i++) { %>
+      <h6><%= i %></h6>
+    <% } %>
+
+    <!-- khai bao bien html -->
+    <% var html = "<h2 style='color: red'>hello</h2>" %>
+    <%- html %>
+  </body>
+</html>

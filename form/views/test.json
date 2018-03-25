@@ -1,0 +1,9 @@
+{"ten":"thanhcong","link":"vangoviet.com","noidung":"banhang"}
+
+mongodump -d fedu3 -o "C:\testmongo"
+
+mongoexport -d defu3 -c danhsachwebsite -o "C:\testmongo\ds.json"
+
+mongoimport -d fedu4 -c bangdl -file "C:\testmongo\ds.json"
+
+mongorestore -d fedu6 "C:\testmongo\ds.json"

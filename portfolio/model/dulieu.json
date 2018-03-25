@@ -1,0 +1,40 @@
+{
+    "sanpham":[
+        {
+            "id":1,
+            "title":"Website aoanhs2303.tk",
+            "bigImage":"/images/sp1/p1.jpg",
+            "productImage":["/images/sp1/p2.jpg","/images/sp1/p3.jpg"],
+            "desc":"I know this question has already been marked as answered, but I believe what you were looking for is the 'partial' syntax. In EJS, you can include the content from one view template in another like so",
+            "client":"HCMUT",
+            "role":"coder",
+            "cat":"web_designer",
+            "link":"aoanhs2303.tk",
+            "urlSEO": "hoc-thiet-ke-web"
+        },
+        {
+            "id":2,
+            "title":"Website vangoviet.com",
+            "bigImage":"/images/sp2/p4.jpg",
+            "productImage":["/images/sp2/p5.jpg","/images/sp2/p6.jpg"],
+            "desc":"I know this question has already been marked as answered, but I believe what you were looking for is the 'partial' syntax. In EJS, you can include the content from one view template in another like so",
+            "client":"KHTN",
+            "role":"dessigner",
+            "cat":"web_dev",
+            "link":"vangoviet.com",
+            "urlSEO": "hoc-lap-trinh-web"
+        },
+        {
+            "id":3,
+            "title":"Website zing.com",
+            "bigImage":"/images/sp3/p7.jpg",
+            "productImage":["/images/sp3/p8.jpg","/images/sp3/p9.jpg"],
+            "desc":"I know this question has already been marked as answered, but I believe what you were looking for is the 'partial' syntax. In EJS, you can include the content from one view template in another like so",
+            "client":"CNTT",
+            "role":"dessigner",
+            "cat":"design_web",
+            "link":"zing.com",
+            "urlSEO": "hoc-photoshop-co-ban"
+        }
+    ]
+}
